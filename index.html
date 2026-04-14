@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs">
+        <input type="number" id="num1" placeholder="Number-1" />
+        <input type="number" id="num2" placeholder="Number-2" />
+      </div>
+
+      <div class="buttons">
+        <button class="btn-toplama" onclick="hesabla('+')">Toplama</button>
+        <button class="btn-cixma" onclick="hesabla('-')">Cixma</button>
+        <button class="btn-vurma" onclick="hesabla('*')">Vurma</button>
+        <button class="btn-bolme" onclick="hesabla('/')">Bolme</button>
+      </div>
+
+      <div class="result-row">
+        <input
+          type="text"
+          id="result"
+          placeholder="neticeni burani yazdirin"
+          readonly
+        />
+      </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
