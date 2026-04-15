@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alışveriş Sayfası</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Mini mağaza</p>
+        <h1>Basit alışveriş sayfası</h1>
+        <p class="hero-copy">
+          3 ürün kartı ve sağ tarafta küçük bir sepet alanı.
+        </p>
+      </header>
+
+      <main class="layout">
+        <section>
+          <div class="section-head">
+            <h2>Ürünler</h2>
+            <span>3 kart</span>
+          </div>
+          <div class="product-grid">
+            <article
+              class="product-card"
+              data-id="1"
+              data-name="Canvas Sırt Çantası"
+              data-price="890"
+              data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+            >
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+                alt="Canvas sırt çantası"
+              />
+              <div class="product-body">
+                <div class="product-topline">
+                  <h3>Canvas Sırt Çantası</h3>
+                  <span class="badge">Popüler</span>
+                </div>
+                <p class="product-description">
+                  Günlük kullanım için hafif, dayanıklı ve sade tasarım.
+                </p>
+                <div class="product-footer">
+                  <strong class="product-price">₺890</strong>
+                  <button class="add-button" type="button" data-add-to-cart>
+                    Sepete Ekle
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-id="2"
+              data-name="Spor Sneaker"
+              data-price="1240"
+              data-image="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=900&q=80"
+            >
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=900&q=80"
+                alt="Spor sneaker"
+              />
+              <div class="product-body">
+                <div class="product-topline">
+                  <h3>Spor Sneaker</h3>
+                  <span class="badge">Yeni</span>
+                </div>
+                <p class="product-description">
+                  Konforlu taban yapısı ile şehir temposuna uygun.
+                </p>
+                <div class="product-footer">
+                  <strong class="product-price">₺1240</strong>
+                  <button class="add-button" type="button" data-add-to-cart>
+                    Sepete Ekle
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-id="3"
+              data-name="Minimal Saat"
+              data-price="1650"
+              data-image="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80"
+            >
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80"
+                alt="Minimal saat"
+              />
+              <div class="product-body">
+                <div class="product-topline">
+                  <h3>Minimal Saat</h3>
+                  <span class="badge">Premium</span>
+                </div>
+                <p class="product-description">
+                  Metal kayış ve sade kadran ile modern görünüm.
+                </p>
+                <div class="product-footer">
+                  <strong class="product-price">₺1650</strong>
+                  <button class="add-button" type="button" data-add-to-cart>
+                    Sepete Ekle
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <aside class="cart-panel">
+          <div class="section-head">
+            <h2>Sepet</h2>
+            <span id="cart-count">0 ürün</span>
+          </div>
+          <div id="cart-items" class="cart-items">
+            <p class="cart-empty">Sepet boş. Bir ürün ekleyin.</p>
+          </div>
+          <div class="cart-summary">
+            <div>
+              <span>Toplam</span>
+              <strong id="cart-total">₺0</strong>
+            </div>
+            <button id="clear-cart" class="ghost-button" type="button">
+              Sepeti Temizle
+            </button>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
